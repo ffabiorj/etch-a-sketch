@@ -1,0 +1,67 @@
+body {
+    font-family: 'Rammetto One', cursive;
+    text-align: center;
+    background-image: url("../img/theblackboard.jpeg");
+}
+
+h1 {
+    color: white;
+    margin-top: 10px;
+}
+
+
+#container {
+  margin-top: 20px;
+  display: inline-grid;
+  width: 512px;
+  box-shadow: 10px 10px 15px;
+  
+} 
+
+.pixel {
+    display: inline-block;
+    background-color: white;
+    
+} 
+
+#control {
+    margin-top: 20px;
+}
+
+
+.button {
+    margin-left: 10px;
+    position: relative;
+    background-color: #827c7c;
+    border: none;
+    font-size: 20px;
+    color: #FFFFFF;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.button:after {
+    content: "";
+    background: black;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+
+.button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
